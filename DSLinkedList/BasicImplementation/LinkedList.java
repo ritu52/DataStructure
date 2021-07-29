@@ -8,6 +8,9 @@ public class LinkedList<T extends Comparable<T>> {
     public int getCount() {
         return count;
     }
+    public Node<T> getRoot() {
+        return root;
+    }
 
     /**
      * Method to traverse and print the elements of linked list
@@ -65,6 +68,24 @@ public class LinkedList<T extends Comparable<T>> {
                 deleteNode(data, nodeToCheck, nodeToCheck.getNextNode());
             }
         }
+    }
+
+    /**
+     * Method will reverse the linked list and print all elements
+     */
+    public void reverseLinkedList() {
+        Node<T> next = null;
+        Node<T> present = root;
+
+        while(present != null) {
+            Node<T> temp = present.getNextNode();
+            present.setNextNode(next);
+
+            next = present;
+            present = temp;
+        }
+        root = next;
+        traverseIntoLinkedList();
     }
 
 }
