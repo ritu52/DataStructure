@@ -1,6 +1,13 @@
 package DSArray.Anagrams;
 
 public class FindAnagrams {
+    /**
+     * Console output of below program:::
+         * Is 'sel' and 'lem' are anagrams?::: false
+         * Is 'restful' and 'fluster' are anagrams?::: true
+         * Is 'test' and 'tests' are anagrams?::: false
+     * @param args: not in use
+     */
     public static void main(String[] args) {
 
         System.out.println("Is "+ "'sel'" + " and "+ "'lem'" +" are anagrams?::: "+ findAnagrams("sel", "lem"));

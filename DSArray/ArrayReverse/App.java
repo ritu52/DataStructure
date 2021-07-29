@@ -3,6 +3,17 @@ package DSArray.ArrayReverse;
 
 public class App {
 
+    /**
+     * Console output of below program
+         * Kevin Su Bob Arun Mano Susi Egg
+         * A reversed String array
+         * Egg Susi Mano Arun Bob Su Kevin
+         * -------------------
+         * 1 2 3 4 5 6 7
+         * A reversed Int array
+         * 7 6 5 4 3 2 1
+     * @param args: not in use
+     */
     public static void main(String[] args) {
         Object[] arrayToReverse = {"Kevin","Su","Bob","Arun","Mano", "Susi", "Egg"};
         for(Object element: arrayToReverse) System.out.print(element+ " ");
