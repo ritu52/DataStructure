@@ -34,7 +34,6 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
     public void remove(T data) {
         if(root != null)
             remove(data, root);
-
     }
 
     private void remove(T data, Node<T> node) {
